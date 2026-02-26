@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+cmd="${1:-help}"
+
+case "$cmd" in
+  install)
+    exec "$DIR/install.sh"
+    ;;
+  uninstall)
+    exec "$DIR/uninstall.sh"
+    ;;
+  help|--help|-h)
+    echo "Usage: ptt-stt <install|uninstall>"
+    ;;
+  *)
+    echo "Unknown command: $cmd" >&2
+    echo "Usage: ptt-stt <install|uninstall>" >&2
+    exit 1
+    ;;
+esac
