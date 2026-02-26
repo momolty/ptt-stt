@@ -33,8 +33,9 @@ MODEL_PATH="$HOME/stt/models/ggml-small.en.bin"
 STT_SCRIPT="$HOME/stt/bin/stt-local.sh"
 HS_CONFIG="$HOME/.hammerspoon/init.lua"
 
-step "Installing dependencies (hammerspoon, ffmpeg, whisper-cpp)"
-brew install hammerspoon ffmpeg whisper-cpp
+step "Installing dependencies (ffmpeg, whisper-cpp, Hammerspoon)"
+brew install ffmpeg whisper-cpp
+brew install --cask hammerspoon
 ok "Dependencies installed"
 
 step "Preparing directories"
