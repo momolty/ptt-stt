@@ -1,6 +1,6 @@
 # ptt-stt
 
-Local, near-zero-cost **Push-To-Talk STT** for macOS.
+Local, **zero-API-cost** **Push-To-Talk STT** for macOS.
 
 - Hotkey: **hold Right Shift + Space**
 - Release to transcribe and paste into the focused app

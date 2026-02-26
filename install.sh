@@ -56,7 +56,7 @@ cat > "$STT_SCRIPT" <<EOF
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Local, zero-cost STT using whisper.cpp
+# Local, zero-API-cost STT using whisper.cpp
 # Usage: stt-local.sh /path/to/audio.m4a
 
 if [[ \$# -lt 1 ]]; then
